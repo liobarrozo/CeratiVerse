@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const url = "https://sodati-api.portfolio-ls.online/soda/";
+  const url = "https://sodati-api.portfolio-ls.online/cerati/";
 
   fetch(url)
     .then((response) => response.json())

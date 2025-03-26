@@ -18,6 +18,11 @@ header {
   width: 100%;
 }
 
+a {
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
 #search {
   padding-left: 15px;
   height: 50%;

@@ -9,14 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const albumCard = document.createElement("div");
         albumCard.classList.add("album-card");
 
-        // Ahora envolvemos el título en un enlace <a>
         albumCard.innerHTML = `
-                  <a href="albums-soda-id.html?id=${album.id}" class="album-link">
-                      <h2>${album.title}</h2>
-                  </a>
-                  <p>Fecha de lanzamiento: ${album.release_date}</p>
-                  <img src="${album.cover_medium}" alt="${album.title}">
-              `;
+          <a href="albums-soda-id.html?id=${album.id}" class="album-link">
+            <h2>${album.title}</h2>
+          </a>
+          <p>Fecha de lanzamiento: ${album.release_date}</p>
+          <img src="${album.cover_medium}" alt="${album.title}">
+        `;
 
         albumContainer.appendChild(albumCard);
       });

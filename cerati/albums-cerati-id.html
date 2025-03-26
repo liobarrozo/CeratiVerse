@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album de Soda Stereo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- si tienes un archivo de estilos -->
+  </head>
+  <body>
+    <div id="album-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Obtener el ID del álbum de la URL
+        const params = new URLSearchParams(window.location.search);
+        const albumId = params.get("id"); // Obtener el id desde la URL
+
+        // Cambiar la URL de la API para que coincida con el endpoint correcto
+        const url = `https://sodati-api.portfolio-ls.online/cerati/${albumId}/album`; // Correcta URL de la API
+
+        fetch(url)
+          .then((response) => response.json())
+          .then((album) => {
+            // Aquí se coloca el contenido del álbum
+            const albumContainer = document.getElementById("album-container");
+            albumContainer.innerHTML = `
+                        <h1>${album.title}</h1>
+                        <p>Fecha de lanzamiento: ${album.release_date}</p>
+                        <p>${
+                          album.description || "Sin descripción disponible."
+                        }</p>
+                        <div class="deezer-player">
+                            <iframe 
+                                src="https://widget.deezer.com/widget/dark/album/${
+                                  album.id
+                                }" 
+                                width="300" 
+                                height="350" 
+                                frameborder="0" 
+                                allowtransparency="true" 
+                                allow="encrypted-media; clipboard-write" 
+                                scrolling="no">
+                            </iframe>
+                        </div>
+                        <img src="${album.cover_medium}" alt="${album.title}">
+                    `;
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+  </body>
+</html>

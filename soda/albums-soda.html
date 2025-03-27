@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Álbums Cerati</title>
     <link rel="stylesheet" href="albums-soda.css" />
+    <link rel="stylesheet" href="/CeratiVerse/header.css" />
   </head>
   <body>
     <header>
@@ -12,8 +13,10 @@
       <a href="/CeratiVerse/index.html">
         <h1>CeratiVerse</h1>
       </a>
-      <input id="search" type="text" placeholder="Amor Amarillo..." />
-      <button id="search__button">Buscar</button>
+      <input id="search-bar" type="text" placeholder="Amor Amarillo..." />
+      <button id="search__button" onclick="redirectToSearchPage()">
+        Buscar
+      </button>
     </header>
     <section id="home">
       <div id="album-container"></div>
@@ -22,5 +25,6 @@
       <script src="albums-soda.js"></script>
       <!-- Tu archivo JavaScript -->
     </section>
+    <script src="/CeratiVerse/search/search.js"></script>
   </body>
 </html>

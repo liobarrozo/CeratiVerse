@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultados de Búsqueda</title>
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="/CeratiVerse/header.css" />
+  </head>
+  <body>
+    <header>
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Buscar álbum o canción..."
+      />
+      <button onclick="redirectToSearchPage()">Buscar</button>
+    </header>
+
+    <main>
+      <h1>Resultados de Búsqueda</h1>
+      <div id="search-results">
+        <!-- Aquí se mostrarán los resultados dinámicamente -->
+      </div>
+    </main>
+
+    <script src="search.js"></script>
+    <!-- Script general para la búsqueda -->
+    <script src="search-results.js"></script>
+    <!-- Script específico para esta página -->
+  </body>
+</html>

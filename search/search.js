@@ -2,7 +2,7 @@
 function redirectToSearchPage() {
   const query = document.getElementById("search-bar").value.trim();
   if (query) {
-    window.location.href = `search/search.html?query=${encodeURIComponent(
+    window.location.href = `${window.location.origin}/search/search.html?query=${encodeURIComponent(
       query
     )}`;
   } else {

@@ -21,6 +21,12 @@ header {
   background-color: #2A0698;
   width: 100%;
 }
+
+@media(min-width:769px){
+  header{
+    height: 100px;
+  }
+}
 h1{
   color: var(--titles-color);
   font-family: var(--titles-font);
@@ -64,6 +70,11 @@ h1{
   color: black; /* Color del texto */
   flex: 1; /* Para que ocupe el espacio disponible */
   /*padding: 6px;  Espaciado interno */
+}
+@media (min-width: 769px){
+  .search-bar{
+    font-size: 17px;
+  }
 }
 
 .search-button {

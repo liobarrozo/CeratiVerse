@@ -9,17 +9,16 @@
   </head>
   <body>
     <header>
-      <a href="../index.html">
-        <h1>CeratiVerse</h1>
+      <a id="h1-header" href="../index.html">
+        <h1 id="h1-header">CeratiVerse</h1>
       </a>
-      <input
-        type="text"
-        id="search-bar"
-        placeholder="Buscar álbum o canción..."
-      />
-      <button onclick="redirectToSearchPage()">Buscar</button>
+        <div class="search-container">
+        <input type="text" placeholder="Buscar" class="search-bar" id="search-bar">
+        <button class="search-button" onclick="redirectToSearchPage()">
+            <img src="../images/search-icon.png" alt="Buscar">
+        </button>
+    </div>
     </header>
-
     <main>
       <h1>Resultados de Búsqueda</h1>
       <div id="search-results">

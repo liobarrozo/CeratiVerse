@@ -9,14 +9,15 @@
   </head>
   <body>
     <header>
-      <img src="" alt="" />
-      <a href="../index.html">
-        <h1>CeratiVerse</h1>
+      <a id="h1-header" href="../index.html">
+        <h1 id="h1-header">CeratiVerse</h1>
       </a>
-      <input id="search-bar" type="text" placeholder="Bocanada..." />
-      <button id="search__button" onclick="redirectToSearchPage()">
-        Buscar
-      </button>
+        <div class="search-container">
+        <input type="text" placeholder="Buscar" class="search-bar" id="search-bar">
+        <button class="search-button" onclick="redirectToSearchPage()">
+            <img src="../images/search-icon.png" alt="Buscar">
+        </button>
+    </div>
     </header>
     <section id="home">
       <div id="album-container"></div>

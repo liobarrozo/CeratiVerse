@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+:root{
+  --titles-font:'Bakbak One', sans-serif;
+  --titles-color: white;
+
+}
 html {
   margin: 0;
   padding: 0;
@@ -11,25 +17,48 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
   height: 10vh;
-  background-color: blue;
+  background-color: #2A0698;
   width: 100%;
 }
-
-#search {
-  padding-left: 15px;
-  height: 50%;
-  width: 40%;
-  border: 2px solid black;
-  border-radius: 7px;
+h1{
+  color: var(--titles-color);
+  font-family: var(--titles-font);
+}
+#h1-header{
+  font-size: 30px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  background-color: white; /* Color de fondo */
+  border-radius: 25px; /* Bordes redondeados */
+  margin-left: auto;
+  margin-right: 8px;
+  padding: 10px; /* Espaciado interno */
 }
 
-#search__button {
-  width: 10%;
-  background-color: white;
-  height: 50%;
-  border: 2px solid black;
-  border-radius: 7px;
+.search-bar {
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno */
+  width: 120px;
+  background: transparent; /* Fondo transparente */
+  color: black; /* Color del texto */
+  flex: 1; /* Para que ocupe el espacio disponible */
+  /*padding: 6px;  Espaciado interno */
 }
+
+.search-button {
+  background: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar */
+}
+
+.search-button img {
+  width: 20px; /* Ajusta el tamaño del icono */
+  height: 20px; /* Ajusta el tamaño del icono */
+}
+

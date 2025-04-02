@@ -26,17 +26,48 @@
     margin-top: 5px;
 }
 
-.home__options{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.card-container {
+    display: flex; /* Para alinear las cards en fila */
+    justify-content: space-around; /* Espacio entre las cards */
     align-items: center;
-
+    gap: 25px;
+    flex-direction: column;
+    margin: 20px; /* Margen alrededor del contenedor */
 }
 
+.card {
+    text-decoration: none; /* Sin subrayado en el enlace */
+    color: black; /* Color del texto */
+    width: 200px; /* Ancho de la card */
+    height: 250px;
+    text-align: center; /* Centrar el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para que no se salga el contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s; /* Transición suave */
+}
 
-@media (min-width:769px){
-    .home__options{
-        flex-direction: row;
-    }
+.card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.card-image {
+    width: 100%; /* Ancho completo */
+    height:200px; /* Altura de la imagen */
+    background-size: cover; /* Cubrir el área */
+}
+
+.cerati {
+    background-image: url('images/ahi-vamos.jpg'); /* Cambia la ruta a la imagen de Cerati */
+}
+
+.soda {
+    background-image: url('images/soda-logo2.png');
+}
+
+.card-title {
+    font-size: 20px;
+    padding: 10px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco */
+    font-family: var(--second-font);
 }

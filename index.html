@@ -20,10 +20,22 @@
   </header>
   <body>
     <section id="home">
-      <h2>Bienvenidos a CeratiVerse</h2>
+      <div class="home__text">
+        <h2 id="home__title">Bienvenidos a CeratiVerse</h2>
+        <p id="home__message">Elija una opción</p>
+      </div>
 
-      <a href="cerati/albums-cerati.html">Gustavo Cerati</a>
-      <a href="soda/albums-soda.html">Soda Stereo</a>
+      <div class="card-container">
+        <a href="cerati/albums-cerati.html" class="card">
+            <div class="card-image cerati"></div>
+            <div class="card-title">Gustavo Cerati</div>
+        </a>
+        <a href="soda/albums-soda.html" class="card">
+            <div class="card-image soda"></div>
+            <div class="card-title">Soda Stereo</div>
+        </a>
+    </div>
+    
     </section>
     <script src="./search/search.js"></script>
   </body>

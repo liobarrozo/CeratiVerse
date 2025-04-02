@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root{
+    --main-font: 'Bakbak One', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+}
+footer{
+    background-color: #2A0698 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column; 
+}
+
+a{
+    color: inherit;
+}
+
+
+#name-footer{
+    color: white;
+    font-family: var(--main-font);
+}
+
+#cr-footer{
+    color: white;
+    font-family: var(--second-font);
+    margin-top: 0px;
+}

@@ -9,7 +9,7 @@ function redirectToSearchPage() {
   const query = searchBar.value.trim();
   if (query) {
     // Ruta absoluta asegurada para GitHub Pages
-    window.location.href = `${window.location.origin}/CeratiVerse/search/search.html?query=${encodeURIComponent(query)}`;
+    window.location.href = `${window.location.origin}/search/search.html?query=${encodeURIComponent(query)}`;
   } else {
     alert("Por favor ingresa un término de búsqueda.");
   }

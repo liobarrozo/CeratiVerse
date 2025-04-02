@@ -22,6 +22,12 @@ a{
     color: white;
     font-family: var(--main-font);
 }
+@media (min-width:769px){
+    #name-footer{
+        font-size: 30px;
+    }
+    
+}
 
 #cr-footer{
     color: white;

@@ -30,6 +30,13 @@ h1{
   margin-left: 10px;
   text-decoration: none;
 }
+
+@media (min-width:769px){
+  #h1-header{
+    font-size: 35px;
+    margin-left: 35px;
+  }  
+}
 .search-container {
   display: flex;
   align-items: center;
@@ -39,6 +46,14 @@ h1{
   margin-left: auto;
   margin-right: 8px;
   padding: 10px; /* Espaciado interno */
+}
+
+@media (min-width:769px){
+  .search-container{
+    margin-right: 25px;
+    width: 300px;
+
+  }
 }
 
 .search-bar {

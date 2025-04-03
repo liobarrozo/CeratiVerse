@@ -28,10 +28,11 @@ header {
   }
 }
 h1{
-  color: var(--titles-color);
-  font-family: var(--titles-font);
+  
 }
 #h1-header{
+  color: var(--titles-color);
+  font-family: var(--titles-font);
   font-size: 30px;
   margin-left: 10px;
   text-decoration: none;

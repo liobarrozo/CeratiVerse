@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CeratiVerse - Detalles del Álbum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="album-detail.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+<body>
+    <!-- Header existente - no modificar -->
+    <header>
+        <a id="h1-header" href="../index.html">
+          <h1 id="h1-header">CeratiVerse</h1>
+        </a>
+          <div class="search-container">
+          <input type="text" placeholder="Buscar" class="search-bar" id="search-bar">
+          <button class="search-button" onclick="redirectToSearchPage()">
+              <img src="../images/search-icon.png" alt="Buscar">
+          </button>
+      </div>
+      </header>
+
+    <main class="container">
+        <div class="back-link">
+            <a href="cerati.html">&larr; Volver a álbumes</a>
+        </div>
+        
+        <!-- Contenedor para los detalles del álbum -->
+        <div id="album-container" class="album-detail-container">
+            <!-- El contenido se generará dinámicamente con JavaScript -->
+            <div class="loading">Cargando detalles del álbum...</div>
+        </div>
+    </main>
+
+    <script src="album-detail.js"></script>
+</body>
+<footer>
+    <h2 id="name-footer">CeratiVerse</h2>
+    <p id="cr-footer">Copyright <a href="https://www.linkedin.com/in/alejo-leonel-barrozo-56b05527a/"> liobarrozo©</a></p>
+  </footer>
+</html>
+

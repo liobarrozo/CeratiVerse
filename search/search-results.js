@@ -50,7 +50,7 @@ function searchAlbumsAndSongs(query) {
             <h2>Albums encontrados</h2>
             <img src="${album.cover_medium}" alt="${album.title}">
             <h3>${album.title}</h3>
-            <a href="../${albumType}/albums-${albumType}-id.html?id=${album.id}">Ver álbum</a>
+            <a href="../${albumType}/album-detail.html?id=${album.id}">Ver álbum</a>
           </div>
         `);
       });

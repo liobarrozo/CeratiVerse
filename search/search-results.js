@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchAlbumsAndSongs(query);
   } else {
     document.getElementById("search-results").innerHTML =
-      "<p>No se ingresó ningún término de búsqueda.</p>";
+      "<p id='not-input-search' >No se ingresó ningún término de búsqueda.</p>";
   }
 });
 
@@ -47,7 +47,7 @@ function searchAlbumsAndSongs(query) {
         let albumType = sodaAlbums.includes(album) ? "soda" : "cerati";
         results.push(`
           <div class="album-result">
-            <h2>Albums encontrados</h2>
+            <h2 id="albums-result-h2">Albums encontrados</h2>
             <img src="${album.cover_medium}" alt="${album.title}">
             <h3>${album.title}</h3>
             <a href="../${albumType}/album-detail.html?id=${album.id}">Ver álbum</a>

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --main-font: 'Bakbak One', sans-serif;
+    --second-font: "Quicksand", sans-serif;
+}
 html {
   margin: 0;
   padding: 0;
@@ -34,6 +41,16 @@ header {
   border-radius: 7px;
 }
 
+#search-h1{
+ font-family: var(--main-font);
+}
+#albums-result-h2{
+  font-family: var(--main-font);
+}
+
+#not-input-search{
+  font-family: var(--second-font)
+}
 .album-card {
   display: flex;
 }

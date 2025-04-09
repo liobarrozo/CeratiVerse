@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <th>#</th>
                     <th>Título</th>
                     <th>Duración</th>
-                    <th>Reproducir</th>
+                    <th> </th>
                   </tr>
                 </thead>
                 <tbody id="song-list">

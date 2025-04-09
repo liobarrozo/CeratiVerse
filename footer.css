@@ -34,3 +34,9 @@ a{
     font-family: var(--second-font);
     margin-top: 0px;
 }
+
+#p-counter{
+    font-family: var(--second-font);
+    color: white;
+    margin-bottom: 35px;
+}

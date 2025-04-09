@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <th>#</th>
                     <th>Título</th>
                     <th>Duración</th>
-                    <th>Reproducir</th>
+                    <th> </th>
                   </tr>
                 </thead>
                 <tbody id="song-list">
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${formattedDuration}</td>
                     <td>
                       <button class="play-button" data-preview="${track.preview}" onclick="playSong(this)">
-                        Reproducir
+                        ▶
                       </button>
                     </td>
                   `
@@ -137,7 +137,7 @@ function playSong(button) {
     currentAudio.pause()
 
     // Cambiar el texto del botón de la canción anterior a "Reproducir"
-    currentButton.textContent = "Reproducir"
+    currentButton.textContent = "▶"
     currentButton.setAttribute("onclick", "playSong(this)")
   }
 
@@ -147,12 +147,12 @@ function playSong(button) {
   audio.play()
 
   // Cambiar el texto del botón de reproducción a "Pausar"
-  button.textContent = "Pausar"
+  button.textContent = "▐▐"
   button.setAttribute("onclick", "pauseSong(this)")
 
   // Detectar cuando la canción haya terminado y cambiar el botón a "Reproducir"
   audio.addEventListener("ended", () => {
-    button.textContent = "Reproducir"
+    button.textContent = "▶"
     button.setAttribute("onclick", "playSong(this)")
   })
 }
